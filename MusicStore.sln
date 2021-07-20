@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicStore.Domain", "MusicStore.Domain\MusicStore.Domain.csproj", "{FEF64874-E15E-49DF-8719-62A5E3394561}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicStore.Business", "MusicStore.Business\MusicStore.Business.csproj", "{5388DBB4-64C1-4F27-A282-C26F5833BC89}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicStore.Service", "MusicStore.Service\MusicStore.Service.csproj", "{22F27908-69D7-4729-A955-4CF0509AC5CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicStore.Infrastructure", "MusicStore.Infrastructure\MusicStore.Infrastructure.csproj", "{B5FBF3A8-90AB-491C-BA82-AD4DFA611819}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicStore.Infrastructure.IoC", "MusicStore.Infrastructure.IoC\MusicStore.Infrastructure.IoC.csproj", "{18B43277-8BF0-47C6-B1EF-53A7E7718AD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicStore.Share", "MusicStore.Share\MusicStore.Share.csproj", "{B8BB43B1-67F2-4C41-B2B2-C62BD3AF9C22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.Framework", "MusicStore.Framework\MusicStore.Framework.csproj", "{98231DEA-12F6-498B-BEEA-7AF75154EB7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.Website", "MusicStore.Website\MusicStore.Website.csproj", "{0C66E605-A457-4491-8FD9-7541A04F0CAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEF64874-E15E-49DF-8719-62A5E3394561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEF64874-E15E-49DF-8719-62A5E3394561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEF64874-E15E-49DF-8719-62A5E3394561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEF64874-E15E-49DF-8719-62A5E3394561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5388DBB4-64C1-4F27-A282-C26F5833BC89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5388DBB4-64C1-4F27-A282-C26F5833BC89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5388DBB4-64C1-4F27-A282-C26F5833BC89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5388DBB4-64C1-4F27-A282-C26F5833BC89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22F27908-69D7-4729-A955-4CF0509AC5CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22F27908-69D7-4729-A955-4CF0509AC5CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22F27908-69D7-4729-A955-4CF0509AC5CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22F27908-69D7-4729-A955-4CF0509AC5CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5FBF3A8-90AB-491C-BA82-AD4DFA611819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5FBF3A8-90AB-491C-BA82-AD4DFA611819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5FBF3A8-90AB-491C-BA82-AD4DFA611819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5FBF3A8-90AB-491C-BA82-AD4DFA611819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18B43277-8BF0-47C6-B1EF-53A7E7718AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18B43277-8BF0-47C6-B1EF-53A7E7718AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18B43277-8BF0-47C6-B1EF-53A7E7718AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18B43277-8BF0-47C6-B1EF-53A7E7718AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8BB43B1-67F2-4C41-B2B2-C62BD3AF9C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8BB43B1-67F2-4C41-B2B2-C62BD3AF9C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8BB43B1-67F2-4C41-B2B2-C62BD3AF9C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8BB43B1-67F2-4C41-B2B2-C62BD3AF9C22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98231DEA-12F6-498B-BEEA-7AF75154EB7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98231DEA-12F6-498B-BEEA-7AF75154EB7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98231DEA-12F6-498B-BEEA-7AF75154EB7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98231DEA-12F6-498B-BEEA-7AF75154EB7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C66E605-A457-4491-8FD9-7541A04F0CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C66E605-A457-4491-8FD9-7541A04F0CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C66E605-A457-4491-8FD9-7541A04F0CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C66E605-A457-4491-8FD9-7541A04F0CAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E388522-CBAA-4BBD-A086-9890E541AFAC}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/mohammadhkhanipour
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MusicStore.Domain\\MusicStore.Domain.csproj
+		SccProjectName1 = MusicStore.Domain
+		SccLocalPath1 = MusicStore.Domain
+		SccProjectUniqueName2 = MusicStore.Business\\MusicStore.Business.csproj
+		SccProjectName2 = MusicStore.Business
+		SccLocalPath2 = MusicStore.Business
+		SccProjectUniqueName3 = MusicStore.Service\\MusicStore.Service.csproj
+		SccProjectName3 = MusicStore.Service
+		SccLocalPath3 = MusicStore.Service
+		SccProjectUniqueName4 = MusicStore.Infrastructure\\MusicStore.Infrastructure.csproj
+		SccProjectName4 = MusicStore.Infrastructure
+		SccLocalPath4 = MusicStore.Infrastructure
+		SccProjectUniqueName5 = MusicStore.Infrastructure.IoC\\MusicStore.Infrastructure.IoC.csproj
+		SccProjectName5 = MusicStore.Infrastructure.IoC
+		SccLocalPath5 = MusicStore.Infrastructure.IoC
+		SccProjectUniqueName6 = MusicStore.Share\\MusicStore.Share.csproj
+		SccProjectName6 = MusicStore.Share
+		SccLocalPath6 = MusicStore.Share
+		SccProjectUniqueName7 = MusicStore.Framework\\MusicStore.Framework.csproj
+		SccProjectName7 = MusicStore.Framework
+		SccLocalPath7 = MusicStore.Framework
+		SccProjectUniqueName8 = MusicStore.Website\\MusicStore.Website.csproj
+		SccProjectName8 = MusicStore.Website
+		SccLocalPath8 = MusicStore.Website
+	EndGlobalSection
+EndGlobal
