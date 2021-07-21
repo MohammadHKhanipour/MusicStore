@@ -7,7 +7,7 @@ namespace MusicStore.Share.DTO
 {
     public class OrderDetailDto : BaseDto
     {
-        public Guid Order_Id { get; set; }
-        public Guid Product_Id { get; set; }
+        public Guid OrderId { get; set; }
+        public Guid ProductId { get; set; }
     }
 }

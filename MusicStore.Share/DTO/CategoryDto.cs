@@ -9,6 +9,6 @@ namespace MusicStore.Share.DTO
     {
         public string Name { get; set; }
         public string Description { get; set; }
-        public Guid Product_Id { get; set; }
+        public Guid ProductId { get; set; }
     }
 }

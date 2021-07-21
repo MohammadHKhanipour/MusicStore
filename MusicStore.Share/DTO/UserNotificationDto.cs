@@ -11,6 +11,6 @@ namespace MusicStore.Share.DTO
         public DateTime Date { get; set; }
         public string MessageCode { get; set; }
         public bool IsSeen { get; set; }
-        public Guid ApplicationUser_Id { get; set; }
+        public Guid ApplicationUserId { get; set; }
     }
 }

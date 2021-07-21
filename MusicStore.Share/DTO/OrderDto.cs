@@ -10,6 +10,6 @@ namespace MusicStore.Share.DTO
         public bool IsFinal { get; set; }
         public int Total { get; set; }
         public DateTime Date { get; set; }
-        public Guid ApplicationUser_Id { get; set; }
+        public Guid ApplicationUserId { get; set; }
     }
 }
