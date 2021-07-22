@@ -4,22 +4,24 @@ using System.Collections.Generic;
 
 namespace MusicStore.Share.Adapter
 {
-    class ProductAdapter : IBaseAdapter<Product, ProductDto>
+    class OrderAdapter : IBaseAdapter<Order, OrderDto>
     {
-        public ProductDto GetDto(Product model)
+        public OrderDto GetDto(Order model)
         {
             if (model == null)
                 return null;
-            return new ProductDto()
+            return new OrderDto()
             {
                 Id = model.Id,
                 IsActive = model.IsActive,
-                Name = model.Name,
-                Price = model.Price
+                IsFinal = model.IsFinal,
+                Total = model.Total,
+                Date = model.Date,
+                ApplicationUserId = model.ApplicationUserId
             };
         }
 
-        public IEnumerable<ProductDto> GetDtos(List<Product> models)
+        public IEnumerable<OrderDto> GetDtos(List<Order> models)
         {
             foreach (var item in models)
             {
@@ -29,20 +31,22 @@ namespace MusicStore.Share.Adapter
             }
         }
 
-        public Product GetModel(ProductDto dto)
+        public Order GetModel(OrderDto dto)
         {
             if (dto == null)
                 return null;
-            return new Product()
+            return new Order()
             {
                 Id = dto.Id,
                 IsActive = dto.IsActive,
-                Name = dto.Name,
-                Price = dto.Price
+                Total = dto.Total,
+                Date = dto.Date,
+                IsFinal = dto.IsFinal,
+                ApplicationUserId = dto.ApplicationUserId
             };
         }
 
-        public IEnumerable<Product> GetModels(List<ProductDto> dtos)
+        public IEnumerable<Order> GetModels(List<OrderDto> dtos)
         {
             foreach (var item in dtos)
             {
