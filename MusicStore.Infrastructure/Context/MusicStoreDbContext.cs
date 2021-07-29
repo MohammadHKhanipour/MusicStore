@@ -12,6 +12,7 @@ namespace MusicStore.Infrastructure.Context
         {
         }
 
+        public DbSet<ApplicationMessage> ApplicationMessages { get; set; }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
         public DbSet<Bill> Bills { get; set; }
         public DbSet<Category> Categories { get; set; }

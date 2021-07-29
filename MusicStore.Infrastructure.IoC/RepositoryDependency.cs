@@ -21,6 +21,7 @@ namespace MusicStore.Infrastructure.IoC
         public static void RegisterRepositories(IServiceCollection services)
         {
             #region Register Repositories
+            services.AddScoped<ICommandRepository<ApplicationMessage>, CommandRepository<ApplicationMessage>>();
             services.AddScoped<ICommandRepository<ApplicationUser>, CommandRepository<ApplicationUser>>();
             services.AddScoped<ICommandRepository<Bill>, CommandRepository<Bill>>();
             services.AddScoped<ICommandRepository<Category>, CommandRepository<Category>>();
@@ -32,6 +33,7 @@ namespace MusicStore.Infrastructure.IoC
             services.AddScoped<ICommandRepository<UserNotification>, CommandRepository<UserNotification>>();
             services.AddScoped<ICommandRepository<Wallet>, CommandRepository<Wallet>>();
 
+            services.AddScoped<IQueryRepository<ApplicationMessage>, QueryRepository<ApplicationMessage>>();
             services.AddScoped<IQueryRepository<ApplicationUser>, QueryRepository<ApplicationUser>>();
             services.AddScoped<IQueryRepository<Bill>, QueryRepository<Bill>>();
             services.AddScoped<IQueryRepository<Category>, QueryRepository<Category>>();
