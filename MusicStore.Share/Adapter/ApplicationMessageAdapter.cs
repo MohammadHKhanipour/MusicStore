@@ -16,7 +16,6 @@ namespace MusicStore.Share.Adapter
             {
                 Id = model.Id,
                 IsActive = model.IsActive,
-                Name = model.Name,
                 Content = model.Content,
                 MessageType = model.MessageType,
                 MessageCode = model.MessageCode
@@ -41,7 +40,6 @@ namespace MusicStore.Share.Adapter
             {
                 Id = dto.Id,
                 IsActive = dto.IsActive,
-                Name = dto.Name,
                 Content = dto.Content,
                 MessageType = dto.MessageType,
                 MessageCode = dto.MessageCode
