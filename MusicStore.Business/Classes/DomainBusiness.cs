@@ -1,10 +1,12 @@
-﻿using System;
+﻿using MusicStore.Business.Interfaces;
+using MusicStore.Framework;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MusicStore.Business.Classes
 {
-    class DomainBusiness
+    public class DomainBusiness<Dto> : IDomainBusiness<Dto> where Dto : BaseDto
     {
     }
 }

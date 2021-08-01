@@ -1,10 +1,11 @@
-﻿using System;
+﻿using MusicStore.Framework;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MusicStore.Business.Interfaces
 {
-    interface IDomainBusiness
+    public interface IDomainBusiness<Dto> where Dto : BaseDto
     {
     }
 }
