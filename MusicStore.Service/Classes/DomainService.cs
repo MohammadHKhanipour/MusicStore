@@ -24,16 +24,16 @@ namespace MusicStore.Service.Classes
             _baseAdapter = baseAdapter;
         }
 
-        public async Task<List<Dto>> GetAsync()
-        {
-            var models = await _queryRepository.GetAsync();
-            return _baseAdapter.GetDtos(models).ToList();
-        }
-
         public async Task<Dto> GetAsync(int id)
         {
             var model = await _queryRepository.GetAsync(id);
             return _baseAdapter.GetDto(model);
+        }
+
+        public async Task<List<Dto>> GetAsync()
+        {
+            var models = await _queryRepository.GetAsync();
+            return _baseAdapter.GetDtos(models).ToList();
         }
 
         public async Task<List<Dto>> GetAsync(Expression<Func<Model, bool>> expression)
@@ -53,16 +53,16 @@ namespace MusicStore.Service.Classes
             return _baseAdapter.GetDto(model);
         }
 
-        public async Task<List<Dto>> GetQueryAsync(string query)
-        {
-            var models = await _queryRepository.GetQueryAsync(query);
-            return _baseAdapter.GetDtos(models).ToList();
-        }
-
         public async Task<Dto> GetSingleOrDefaultAsync(Expression<Func<Model, bool>> expression)
         {
             var model = await _queryRepository.GetSingleOrDefaultAsync(expression);
             return _baseAdapter.GetDto(model);
+        }
+
+        public async Task<List<Dto>> GetQueryAsync(string query)
+        {
+            var models = await _queryRepository.GetQueryAsync(query);
+            return _baseAdapter.GetDtos(models).ToList();
         }
 
         public async Task<bool> AddAsync(Model entity)
