@@ -10,10 +10,12 @@ namespace MusicStore.Infrastructure.Repositories
     public class CommandRepository<Model> : ICommandRepository<Model> where Model : BaseModel
     {
         private readonly MusicStoreDbContext _context;
+
         public CommandRepository(MusicStoreDbContext context)
         {
             _context = context;
         }
+
         public async Task<bool> AddAsync(Model entity)
         {
             try
@@ -27,6 +29,7 @@ namespace MusicStore.Infrastructure.Repositories
                 return false;
             }
         }
+
         public async Task<bool> AddRangeAsync(List<Model> entities)
         {
             try
@@ -40,6 +43,7 @@ namespace MusicStore.Infrastructure.Repositories
                 return false;
             }
         }
+
         public async Task<bool> DeleteAsync(int id)
         {
             try
@@ -56,6 +60,7 @@ namespace MusicStore.Infrastructure.Repositories
                 return false;
             }
         }
+
         public async Task<bool> DeleteAsync(Model entity)
         {
             try
@@ -69,6 +74,7 @@ namespace MusicStore.Infrastructure.Repositories
                 return false;
             }
         }
+
         public async Task<bool> DeleteRangeAsync(List<Model> entities)
         {
             try
@@ -82,6 +88,7 @@ namespace MusicStore.Infrastructure.Repositories
                 return false;
             }
         }
+
         public async Task<bool> UpdateAsync(Model entity)
         {
             try
